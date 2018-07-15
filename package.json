@@ -1,0 +1,33 @@
+{
+  "name": "fsite-simple-landing",
+  "version": "1.0.0",
+  "description": "simple landing with nav, banner, icon-cards and footer",
+  "main": "main.js",
+  "dependencies": {
+    "autoprefixer": "^8.6.5",
+    "gulp-less": "^4.0.1",
+    "gulp-sass": "^4.0.1",
+    "hoek": "^5.0.3"
+  },
+  "devDependencies": {
+    "gulp-postcss": "^7.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-kon/fsite-simple-landing.git"
+  },
+  "keywords": [
+    "html",
+    "sass",
+    "landing"
+  ],
+  "author": "mkon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m-kon/fsite-simple-landing/issues"
+  },
+  "homepage": "https://github.com/m-kon/fsite-simple-landing#readme"
+}
