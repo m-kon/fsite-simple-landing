@@ -20,11 +20,11 @@ gulp.task('autoprefixer', function () {
 });
 
 gulp.task('watch', gulp.series('sass', 'autoprefixer', function(done) {
-    gulp.watch('sass/*.sass', gulp.series('sass'));
+    gulp.watch('sass/*.sass', gulp.series('sass', 'autoprefixer'));
     done();
 }));
 
 gulp.task('default', gulp.series('watch', function(done) {
-  exec('live-server');
-  done();
+    exec('live-server');
+    done();
 }));
