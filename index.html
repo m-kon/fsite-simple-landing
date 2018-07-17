@@ -18,16 +18,26 @@
   <body>
     <!-- лэндинг состоит из:
           навигации, большого баннера с кнопкой, описание особенностей, подвала. -->
-    <nav class="navbar">
-      <!-- навигация есть панель сверху.
-           состоит из:
-            логотипа слева, навигационной ссылки справа. -->
-      <a class="navbar-brand">Навбар</a>
-
-      <a href="#" class="navbar-nav">Ссылка</a>
+    <nav class="fsite-navbar">
+      <span class="fsite-navbar-brand">Навбар</span>
+      <button class="fsite-navbar-toggler"
+              type="button"
+              data-toggle="fsite-navbar-collapse"
+              data-target="#fsiteNavbarNavAltMarkup"
+              aria-controls="fsiteNavbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="fsite-navbar-toggler-icon"></span>
+      </button>
+      <div class="fsite-navbar-collapse"
+            id="fsiteNavbarNavAltMarkup">
+        <div class="fsite-navbar-nav">
+          <a href="#">Ссылка</a>
+        </div>
+      </div>
     </nav>
 
-    <div class="section" id="top-page-banner">
+    <div class="section text-center" id="top-page-banner">
       <!-- баннер есть верхняя часть страницы.
            на маленьком дисплее - это первый экран.
            состоит из:
@@ -35,10 +45,10 @@
             пояснительного подзаголовка, кнопки действия. -->
       <h1>Fsite simple landing</h1>
       <h5>Современный адаптивный шаблон для разработки простого лэндинга</h5>
-      <a href="#">Кнопка</a>
+      <a href="#" class="btn btn-lg action-btn">Кнопка</a>
     </div>
 
-    <div class="section" id="icon-section">
+    <div class="section text-center" id="icon-section">
       <!-- секция с иконками есть раздел с карточками.
            каждая карточка состоит из:
             иконки, заголовка, параграфа с текстом. -->
