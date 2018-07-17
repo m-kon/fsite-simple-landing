@@ -100,7 +100,7 @@ nav, .btn {
     font-size: 3.5rem;
     font-weight: 350;
     line-height: 1.2;
-    padding-top: 1.5rem;
+    padding-top: 2.5rem;
     margin-bottom: 1.5rem; }
   .section h5 {
     font-size: 1.25rem;
@@ -110,6 +110,6 @@ nav, .btn {
     color: #fff;
     background-color: #28a745;
     display: inline-block;
-    margin-bottom: 4.5rem; }
+    margin-bottom: 3rem; }
 
 /*# sourceMappingURL=styles.css.map */
