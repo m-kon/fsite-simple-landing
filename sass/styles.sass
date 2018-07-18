@@ -6,6 +6,8 @@ $color-nav-link: rgba(255,255,255,.6)
 $color-nav-link-active: rgba(255,255,255,1)
 $color-nav-link-disabled: rgba(255,255,255,.3)
 
+$color-footer-bg: rgba(23, 162, 184, .5);
+
 $color-cyan: #17a2b8
 $color-light: #fff
 
@@ -30,9 +32,15 @@ nav, .btn
   @include respond-to(md)
     flex-flow: row nowrap
   
-  >.container
+  // >.container
+  .fsite-navbar-content
     display: flex
     justify-content: space-between
+    margin-top: unset
+    margin-bottom: unset
+    width: 90%
+    margin-left: auto
+    margin-right: auto
 
   .fsite-navbar-brand
     display: inline-block
@@ -124,7 +132,7 @@ nav, .btn
   margin-top: 3.5rem
   margin-bottom: 3rem
   // служебный бэкграунд, облегчает верстку
-  background-color: $color-service-bg
+  // background-color: $color-service-bg
 
   >h1
     color: rgba(244, 67, 54, .9)
@@ -147,7 +155,7 @@ nav, .btn
   
   .icon-block
     // служебный бэкграунд, облегчает верстку
-    background-color: $color-service-bg
+    // background-color: $color-service-bg
   
     >h2
       padding-top: 2.5rem
@@ -165,3 +173,6 @@ nav, .btn
     .material-icons
       font-size: 3rem
       color: $color-cyan
+
+.page-footer
+  background-color: $color-footer-bg
