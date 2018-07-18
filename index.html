@@ -19,55 +19,61 @@
     <!-- лэндинг состоит из:
           навигации, большого баннера с кнопкой, описание особенностей, подвала. -->
     <nav class="fsite-navbar">
-      <span class="fsite-navbar-brand">Навбар</span>
-      <button class="fsite-navbar-toggler"
-              type="button"
-              data-toggle="fsite-navbar-collapse"
-              data-target="#fsiteNavbarNavAltMarkup"
-              aria-controls="fsiteNavbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-        <span class="fsite-navbar-toggler-icon"></span>
-      </button>
-      <div class="fsite-navbar-collapse"
-            id="fsiteNavbarNavAltMarkup">
-        <div class="fsite-navbar-nav">
-          <a href="#">Ссылка</a>
+      <div class="container">
+        <span class="fsite-navbar-brand">Навбар</span>
+        <button class="fsite-navbar-toggler"
+                type="button"
+                data-toggle="fsite-navbar-collapse"
+                data-target="#fsiteNavbarNavAltMarkup"
+                aria-controls="fsiteNavbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="fsite-navbar-toggler-icon"></span>
+        </button>
+        <div class="fsite-navbar-collapse"
+              id="fsiteNavbarNavAltMarkup">
+          <div class="fsite-navbar-nav">
+            <a href="#">Ссылка</a>
+          </div>
         </div>
       </div>
     </nav>
 
-    <div class="section text-center" id="top-page-banner">
-      <!-- баннер есть верхняя часть страницы.
-           на маленьком дисплее - это первый экран.
-           состоит из:
-            большого короткого заголовка, меньшего по размеру
-            пояснительного подзаголовка, кнопки действия. -->
-      <h1>Fsite simple landing</h1>
-      <h5>Современный адаптивный шаблон для разработки простого лэндинга</h5>
-      <a href="#" class="btn btn-lg action-btn">Кнопка</a>
-    </div>
-
-    <div class="section text-center" id="icon-section">
-      <!-- секция с иконками есть раздел с карточками.
-           каждая карточка состоит из:
-            иконки, заголовка, параграфа с текстом. -->
-      <div class="icon-block">
-        <h2><i class="material-icons">face</i></h2>
-        <h5>Ускорение создания лэндинга</h5>
-        <p>Готовый к наполнению простой шаблон с готовыми к использованию стандартными элементами и настроенными стилями.</p>
+    <div class="container">
+      <div class="section text-center" id="top-page-banner">
+        <!-- баннер есть верхняя часть страницы.
+            на маленьком дисплее - это первый экран.
+            состоит из:
+              большого короткого заголовка, меньшего по размеру
+              пояснительного подзаголовка, кнопки действия. -->
+        <h1>Fsite simple landing</h1>
+        <h5>Современный адаптивный шаблон для разработки простого лэндинга</h5>
+        <a href="#" class="btn btn-lg action-btn">Кнопка</a>
       </div>
 
-      <div class="icon-block">
-        <h2><i class="material-icons">face</i></h2>
-        <h5>Курс на пользовательский опыт</h5>
-        <p>Единая для всех платформ отзывчивая система верстки доставляет более унифицированный пользовательский опыт.</p>
-      </div>
+      <div class="section text-center" id="icon-section">
+        <!-- секция с иконками есть раздел с карточками.
+            каждая карточка состоит из:
+              иконки, заголовка, параграфа с текстом. -->
+        <div class="row">
+          <div class="icon-block col-sm">
+            <h2><i class="material-icons">face</i></h2>
+            <h5>Ускорение создания лэндинга</h5>
+            <p>Готовый к наполнению простой шаблон с готовыми к использованию стандартными элементами и настроенными стилями.</p>
+          </div>
 
-      <div class="icon-block">
-        <h2><i class="material-icons">face</i></h2>
-        <h5>Прост в использовании</h5>
-        <p>Небольшое количество составных элементов позволяют сильнее сфокусировать внимание на важном.</p>
+          <div class="icon-block col-sm">
+            <h2><i class="material-icons">face</i></h2>
+            <h5>Курс на пользовательский опыт</h5>
+            <p>Единая для всех платформ отзывчивая система верстки доставляет более унифицированный пользовательский опыт.</p>
+          </div>
+
+          <div class="icon-block col-sm">
+            <h2><i class="material-icons">face</i></h2>
+            <h5>Прост в использовании</h5>
+            <p>Небольшое количество составных элементов позволяют сильнее сфокусировать внимание на важном.</p>
+          </div>
+        </div>
       </div>
     </div>
 
