@@ -2,6 +2,7 @@
 
 $color-nav-bg: #17a2b8
 $color-nav-text: #fff
+$color-nav-text-dark: #000
 $color-nav-link: rgba(255,255,255,.8)
 $color-nav-link-active: rgba(255,255,255,1)
 $color-nav-link-disabled: rgba(255,255,255,.3)
@@ -72,11 +73,14 @@ p
     font-size: 1.25rem
     line-height: 1
     float: right
+    outline-color: rgba(255,255,255,0)
+    transition-property: outline-color
+    transition-duration: .5s
     @include respond-to(md)
       display: none
     
     &:focus
-      outline: 0
+      outline-color: rgba(255,255,255,0)
     
     &:not(:disabled):not(.disabled)
       cursor: pointer
@@ -97,15 +101,50 @@ p
       content: ""
   
   .fsite-navbar-collapse
-    flex-basis: 100%
-    flex-grow: 1
-    align-items: center
-    justify-content: flex-end!important
+    background-color: $color-light
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2)
+    display: block
+    position: fixed
+    height: calc(100% + 60px)
+    width: 300px
+    left: 0
+    top: 0
+    padding-bottom: 60px
+    z-index: 999
+    overflow-y: auto
+    will-change: transform
+    backface-visibility: hidden
+    transform: translateX(-105%)
+    visibility: visible
+    transition-property: all
+    transition-duration: .5s
     @include respond-to(md)
+      box-shadow: none
       display: flex!important
+      flex-direction: row
+      flex-basis: 100%
+      flex-grow: 1
+      align-items: center
+      justify-content: flex-end!important
+      // чтобы перекрыть дефолтные настройки
+      position: static
+      width: auto
+      left: auto
+      top: auto
+      transform: none
+      height: auto
+      background-color: rgba(0, 0, 0, 0)
+      padding-bottom: 0
+      z-index: auto
+      overflow-y: visible
+      will-change: auto
+      backface-visibility: visible
 
     &:not(.show)
-      display: none
+      visibility: hidden
+    
+    &.show
+      transform: translateX(0)
 
     .fsite-navbar-nav
       display: flex
@@ -117,12 +156,13 @@ p
         flex-direction: row
 
       a
-        color: $color-nav-link
+        color: $color-nav-text-dark
         display: block
         padding: 0.5rem 1rem
         padding-right: 0
         padding-left: 0
         @include respond-to(md)
+          color: $color-nav-link
           padding-right: 0.5rem
           padding-left: 0.5rem
 
@@ -161,6 +201,7 @@ p
     background-color: $color-btn
     display: inline-block
     margin-bottom: 3rem
+    border: none !important
   
   .icon-block
     // служебный бэкграунд, облегчает верстку
