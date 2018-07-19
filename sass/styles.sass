@@ -174,7 +174,9 @@ a:hover
           padding: 0.5rem
 
         &:hover
+          border-right: 4px solid rgb(255, 193, 7)
           @include respond-to(md)
+            border-right: 0
             color: $color-nav-link-active
             font-weight: 300
 
@@ -218,6 +220,7 @@ a:hover
   .icon-block
     // служебный бэкграунд, облегчает верстку
     // background-color: $color-service-bg
+    color: $color-cyan
   
     >h2
       padding-top: 2.5rem
@@ -228,7 +231,6 @@ a:hover
     
     .material-icons
       font-size: 3rem
-      color: $color-cyan
 
 .fsite-page-footer
   background-color: $color-footer-bg

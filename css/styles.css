@@ -146,10 +146,13 @@ a:hover {
           .fsite-navbar .fsite-navbar-collapse .fsite-navbar-nav a {
             color: rgba(255, 255, 255, 0.8);
             padding: 0.5rem; } }
-        @media only screen and (min-width: 768px) {
-          .fsite-navbar .fsite-navbar-collapse .fsite-navbar-nav a:hover {
-            color: white;
-            font-weight: 300; } }
+        .fsite-navbar .fsite-navbar-collapse .fsite-navbar-nav a:hover {
+          border-right: 4px solid #ffc107; }
+          @media only screen and (min-width: 768px) {
+            .fsite-navbar .fsite-navbar-collapse .fsite-navbar-nav a:hover {
+              border-right: 0;
+              color: white;
+              font-weight: 300; } }
       .fsite-navbar .fsite-navbar-collapse .fsite-navbar-nav a.active {
         color: white; }
       .fsite-navbar .fsite-navbar-collapse .fsite-navbar-nav a.disabled {
@@ -180,14 +183,15 @@ a:hover {
     display: inline-block;
     margin-bottom: 3rem;
     border: none !important; }
-  .section .icon-block > h2 {
-    padding-top: 2.5rem;
-    margin-bottom: 1.5rem; }
-  .section .icon-block > h5 {
-    margin-bottom: 1.25rem; }
-  .section .icon-block .material-icons {
-    font-size: 3rem;
+  .section .icon-block {
     color: #17a2b8; }
+    .section .icon-block > h2 {
+      padding-top: 2.5rem;
+      margin-bottom: 1.5rem; }
+    .section .icon-block > h5 {
+      margin-bottom: 1.25rem; }
+    .section .icon-block .material-icons {
+      font-size: 3rem; }
 
 .fsite-page-footer {
   background-color: rgba(220, 53, 69, 0.65);
