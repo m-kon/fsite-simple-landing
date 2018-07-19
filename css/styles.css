@@ -9,6 +9,11 @@ p {
   line-height: 1.125;
   margin-left: .125rem; }
 
+a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  font-weight: 400;
+  text-decoration: none; }
+
 .fsite-navbar {
   background-color: #17a2b8;
   color: #fff;
@@ -59,6 +64,8 @@ p {
         display: none; } }
     .fsite-navbar button.fsite-navbar-toggler:focus {
       outline-color: rgba(255, 255, 255, 0); }
+    .fsite-navbar button.fsite-navbar-toggler:hover {
+      background-color: rgba(0, 0, 0, 0.1); }
     .fsite-navbar button.fsite-navbar-toggler:not(:disabled):not(.disabled) {
       cursor: pointer; }
     .fsite-navbar button.fsite-navbar-toggler.toggled {
@@ -91,7 +98,7 @@ p {
             backface-visibility: hidden;
     -webkit-transform: translateX(-105%);
             transform: translateX(-105%);
-    visibility: visible;
+    visibility: visible !important;
     transition-property: all;
     transition-duration: .5s; }
     @media only screen and (min-width: 768px) {
@@ -134,14 +141,15 @@ p {
       .fsite-navbar .fsite-navbar-collapse .fsite-navbar-nav a {
         color: #000;
         display: block;
-        padding: 0.5rem 1rem;
-        padding-right: 0;
-        padding-left: 0; }
+        padding: 1rem 1rem; }
         @media only screen and (min-width: 768px) {
           .fsite-navbar .fsite-navbar-collapse .fsite-navbar-nav a {
             color: rgba(255, 255, 255, 0.8);
-            padding-right: 0.5rem;
-            padding-left: 0.5rem; } }
+            padding: 0.5rem; } }
+        @media only screen and (min-width: 768px) {
+          .fsite-navbar .fsite-navbar-collapse .fsite-navbar-nav a:hover {
+            color: white;
+            font-weight: 300; } }
       .fsite-navbar .fsite-navbar-collapse .fsite-navbar-nav a.active {
         color: white; }
       .fsite-navbar .fsite-navbar-collapse .fsite-navbar-nav a.disabled {
@@ -214,7 +222,8 @@ p {
       @media only screen and (min-width: 768px) {
         .fsite-page-footer .footer-copyright p {
           margin-left: auto; } }
-      .fsite-page-footer .footer-copyright p span {
+      .fsite-page-footer .footer-copyright p a {
+        color: #fff;
         font-weight: 350; }
 
 /*# sourceMappingURL=styles.css.map */
