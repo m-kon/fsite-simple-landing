@@ -39,10 +39,8 @@ a:hover {
   .fsite-navbar .fsite-navbar-brand {
     display: inline-block;
     cursor: pointer;
-    padding-top: .3125rem;
-    padding-bottom: .3125rem;
     margin-right: 1rem;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     line-height: inherit;
     white-space: nowrap; }
     .fsite-navbar .fsite-navbar-brand:hover, .fsite-navbar .fsite-navbar-brand:focus {
@@ -58,7 +56,8 @@ a:hover {
     float: right;
     outline-color: rgba(255, 255, 255, 0);
     transition-property: outline-color;
-    transition-duration: .5s; }
+    transition-duration: .5s;
+    transition: background-color .15s ease-in-out; }
     @media only screen and (min-width: 768px) {
       .fsite-navbar button.fsite-navbar-toggler {
         display: none; } }
@@ -141,7 +140,8 @@ a:hover {
       .fsite-navbar .fsite-navbar-collapse .fsite-navbar-nav a {
         color: #000;
         display: block;
-        padding: 1rem 1rem; }
+        padding: 1rem 1rem;
+        transition: background-color .15s ease-in-out; }
         @media only screen and (min-width: 768px) {
           .fsite-navbar .fsite-navbar-collapse .fsite-navbar-nav a {
             color: rgba(255, 255, 255, 0.8);
@@ -183,6 +183,8 @@ a:hover {
     display: inline-block;
     margin-bottom: 3rem;
     border: none !important; }
+    .section .action-btn:hover {
+      background: #23903c; }
   .section .icon-block {
     color: #17a2b8; }
     .section .icon-block > h2 {
@@ -205,14 +207,17 @@ a:hover {
     padding-top: 2rem;
     padding-bottom: 1rem; }
     .fsite-page-footer .fsite-footer-content .about-me p {
-      color: rgba(255, 255, 255, 0.8); }
+      color: rgba(255, 255, 255, 0.8);
+      padding-left: .25rem;
+      margin-left: 0; }
     .fsite-page-footer .fsite-footer-content .connect {
       display: flex;
       flex-direction: column;
       margin-bottom: .5rem; }
       .fsite-page-footer .fsite-footer-content .connect a {
         color: rgba(255, 255, 255, 0.8);
-        margin-left: .125rem; }
+        padding-left: .25rem;
+        transition: background-color .15s ease-in-out; }
   .fsite-page-footer .footer-copyright {
     background-color: rgba(220, 53, 69, 0.65); }
     .fsite-page-footer .footer-copyright p {
@@ -227,7 +232,10 @@ a:hover {
         .fsite-page-footer .footer-copyright p {
           margin-left: auto; } }
       .fsite-page-footer .footer-copyright p a {
+        background: rgba(0, 0, 0, 0);
         color: #fff;
-        font-weight: 350; }
+        font-weight: 400; }
+        .fsite-page-footer .footer-copyright p a:hover {
+          background: rgba(0, 0, 0, 0); }
 
 /*# sourceMappingURL=styles.css.map */

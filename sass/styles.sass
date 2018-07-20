@@ -59,10 +59,8 @@ a:hover
   .fsite-navbar-brand
     display: inline-block
     cursor: pointer
-    padding-top: .3125rem
-    padding-bottom: .3125rem
     margin-right: 1rem
-    font-size: 1.25rem
+    font-size: 1.5rem
     line-height: inherit
     white-space: nowrap
     
@@ -81,6 +79,7 @@ a:hover
     outline-color: rgba(255,255,255,0)
     transition-property: outline-color
     transition-duration: .5s
+    transition: background-color .15s ease-in-out
     @include respond-to(md)
       display: none
     
@@ -167,8 +166,7 @@ a:hover
         color: $color-nav-text-dark
         display: block
         padding: 1rem 1rem
-        // padding-right: 0
-        // padding-left: 0
+        transition: background-color .15s ease-in-out
         @include respond-to(md)
           color: $color-nav-link
           padding: 0.5rem
@@ -216,6 +214,9 @@ a:hover
     display: inline-block
     margin-bottom: 3rem
     border: none !important
+
+    &:hover
+      background: #23903c
   
   .icon-block
     // служебный бэкграунд, облегчает верстку
@@ -247,6 +248,8 @@ a:hover
 
     .about-me p
       color: $color-light-second
+      padding-left: .25rem
+      margin-left: 0
 
     .connect
       display: flex
@@ -255,7 +258,8 @@ a:hover
 
       a
         color: $color-light-second
-        margin-left: .125rem
+        padding-left: .25rem
+        transition: background-color .15s ease-in-out
   
   .footer-copyright
     background-color: $color-footer-bg
@@ -272,5 +276,9 @@ a:hover
         margin-left: auto
       
       a
+        background: rgba(0,0,0,0)
         color: $color-light
-        font-weight: 350
+        font-weight: 400
+
+        &:hover
+          background: rgba(0,0,0,0)
