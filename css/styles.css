@@ -68,9 +68,8 @@ a:hover {
     .fsite-navbar button.fsite-navbar-toggler:not(:disabled):not(.disabled) {
       cursor: pointer; }
     .fsite-navbar button.fsite-navbar-toggler.toggled {
-      outline-color: rgba(255, 255, 255, 0.3);
-      outline-style: auto;
-      outline-width: 5px; }
+      box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.3); }
     .fsite-navbar button.fsite-navbar-toggler .fsite-navbar-toggler-icon {
       background: no-repeat center center;
       background-size: 100% 100%;
@@ -185,6 +184,8 @@ a:hover {
     border: none !important; }
     .section .action-btn:hover {
       background: #23903c; }
+    .section .action-btn:focus {
+      box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.5) !important; }
   .section .icon-block {
     color: #17a2b8; }
     .section .icon-block > h2 {
