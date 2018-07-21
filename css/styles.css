@@ -69,7 +69,8 @@ a:hover {
       cursor: pointer; }
     .fsite-navbar button.fsite-navbar-toggler.toggled {
       box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.3);
-      border: 1px solid rgba(255, 255, 255, 0.3); }
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      background-color: rgba(0, 0, 0, 0.2); }
     .fsite-navbar button.fsite-navbar-toggler .fsite-navbar-toggler-icon {
       background: no-repeat center center;
       background-size: 100% 100%;
